@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Add role and attribute based permission evaluator with deny-overrides, fail-closed three-valued JSON conditions, role inheritance and CSV/Markdown matrix export.
 - Initial project structure from the factory utility template.

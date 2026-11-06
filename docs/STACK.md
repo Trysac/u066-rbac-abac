@@ -19,5 +19,6 @@
 | Jest | Needs extra transforms for ESM and TypeScript; slower. |
 | Shell scripts for gates | Not portable to Windows; the gate runner is a Node script. |
 | Bundlers (tsup, Rollup) | Unneeded for a small ESM library; `tsc` emits what is published. |
+| Cedar or Rego as policy language | Full languages with their own runtimes; policies here stay plain JSON data. |
 
 Add a row whenever a dependency or tool is added or rejected.
