@@ -1,7 +1,6 @@
 # rbac-abac
 
-[![npm version](https://img.shields.io/npm/v/@trysac/rbac-abac.svg)](https://www.npmjs.com/package/@trysac/rbac-abac)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/rbac-abac.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u066-rbac-abac/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u066-rbac-abac/actions/workflows/ci.yml)
 
 Role and attribute based permission evaluator with deny-overrides, fail-closed three-valued JSON conditions, role inheritance and an exportable matrix.
@@ -12,9 +11,15 @@ Authorization rules spread across route handlers become impossible to audit, and
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/rbac-abac
+git clone https://github.com/Trysac/u066-rbac-abac.git
+cd u066-rbac-abac && npm ci && npm run build
+cd ../your-project && npm install ../u066-rbac-abac
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/rbac-abac"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations.
 
